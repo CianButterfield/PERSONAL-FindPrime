@@ -15,11 +15,12 @@ namespace FinePrime
             while (!exit)
             {
                 string inputString = Console.ReadLine();
-                if (inputString != "exit" && inputString != "Exit" && inputString != "e" && inputString != "E")
+                if (inputString != "exit" && inputString != "Exit" && inputString != "e" && inputString != "E" && inputString != "")
                 {
                     int inputInt = Convert.ToInt32(inputString);
                     int wantPrime = inputInt;
-                    Console.WriteLine(loopCheck(wantPrime));
+                    Console.WriteLine("\nThe " + inputInt + "th prime number is " + loopCheck(wantPrime));
+                    Console.WriteLine("\nType a number to find another prime.\nType 'exit' or 'e' to end program.\n");
                 }
                 else
                 {
@@ -70,8 +71,8 @@ namespace FinePrime
         static void Greet()
         {
             Console.WriteLine("What prime do you want?");
-            Console.WriteLine("WARNING: Inputs less than 5 will not desplay correct answers\nWARNING: Inputs over 10,0000 may take a long time");
-            Console.WriteLine("Type 'exit' or 'e' to end program");
+            Console.WriteLine("WARNING: Inputs less than 5 will not desplay correct answers.\nWARNING: Inputs over 100,000 may take a long time.");
+            Console.WriteLine("Type 'exit' or 'e' to end program.\n");
         }
     }
 }

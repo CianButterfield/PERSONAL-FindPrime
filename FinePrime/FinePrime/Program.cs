@@ -10,7 +10,7 @@ namespace FinePrime
     {
         static void Main(string[] args)
         {
-            int wantPrime = 1000000;
+            int wantPrime = 10001;
             Console.WriteLine(loopCheck(wantPrime - 1));
             Console.ReadKey();
         }
@@ -25,7 +25,7 @@ namespace FinePrime
                 {
                     primeCount++;
                     //Take out in final version, testing purposes only
-                    Console.WriteLine(currentNumCheck);
+                    //Console.WriteLine(currentNumCheck);
                 }
                 currentNumCheck += 2;
             }
